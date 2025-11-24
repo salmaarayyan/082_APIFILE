@@ -9,9 +9,9 @@ async function createKomik(database, komikData) {
     title,
     description,
     author,
-    imageType: imageType ?? null,
-    imageName: imageName ?? null,
-    imageData: imageData ?? null,
+    imageType: imageType || null,
+    imageName: imageName || null,
+    imageData: imageData || null,
   });
 
   return newKomik;
